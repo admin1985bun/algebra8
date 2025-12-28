@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu Lecții Algebră</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #0f2557 0%, #1a3a6b 100%);
+            color: #e8e8e8;
+            padding: 20px 15px;
+            line-height: 1.6;
+        }
+        
+        .section-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 25px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .section-title:first-child {
+            margin-top: 0;
+        }
+        
+        .subsection-title {
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 15px 0 10px 0;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            border-left: 3px solid #4a90e2;
+        }
+        
+        .menu-table {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        
+        .menu-item {
+            background: rgba(230, 230, 230, 0.95);
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            border-left: 3px solid #4a90e2;
+        }
+        
+        .menu-item:hover {
+            background: rgba(240, 240, 240, 1);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .menu-item ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu-item li {
+            margin: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .menu-item li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+        
+        .menu-item a {
+            color: #000066;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+        
+        .menu-item a:hover {
+            color: #4a90e2;
+            text-decoration: underline;
+        }
+        
+        .video-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .video-link::before {
+            content: "🎥";
+            margin-right: 5px;
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4a90e2;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5ba3ff;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px 10px;
+            }
+            
+            .section-title {
+                font-size: 1rem;
+            }
+            
+            .subsection-title {
+                font-size: 0.9rem;
+            }
+            
+            .menu-item {
+                padding: 10px 12px;
+            }
+            
+            .menu-item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section-title">Lecții interactive</div>
+    
+    <div class="subsection-title">Funcții</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="grafic/fctdef.html" target="intro">funcții-definire</a></li>
+                <li><a href="grafic/graficfc1.html" target="intro">grafice de funcții (0)</a></li>
+                <li><a href="grafic/domdef.html" target="intro">grafice de funcții (1)</a></li>
+                <li><a href="grafic/graffc2.html" target="intro">grafice de funcții (2)</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-item">
+            <ul>
+                <li><a href="intergr/intergraf.html" target="intro">intersecția graficelor</a></li>
+                <li><a href="sistem/sist1.html" target="_new">aplicație</a></li>
+                <li><a href="grafic/graffc3.html" target="intro">restricții</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="subsection-title">Ecuații</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="ecgrd2/ecuatii.html" target="_new">Ecuația grd. II</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="subsection-title">Filme</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="https://youtu.be/5kCk1oXs2Uc" target="_new" class="video-link">Funcții</a></li>
+                <li><a href="filme/ecgrd2/index.html" target="intro">Ecuația grd. II</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Numere reale</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="nrreale/nrreal1.pdf" target="intro">Recapitulare 1</a></li>
+                <li><a href="nrreale/nrreal2.pdf" target="intro">Recapitulare 2</a></li>
+                <li><a href="nrreale/nrreal3.pdf" target="intro">Recapitulare 3</a></li>
+                <li><a href="nrreale/nrreal4.pdf" target="intro">Recapitulare 4</a></li>
+                <li><a href="nrreale/nrreal5.pdf" target="intro">Recapitulare 5</a></li>
+                <li><a href="nrreale/nrreale6.pdf" target="intro">Recapitulare 6</a></li>
+                <li><a href="nrreale/nrreale7.pdf" target="intro">Recapitulare 7</a></li>
+                <li><a href="nrreale/nrreale8.pdf" target="intro">Recapitulare 8</a></li>
+                <li><a href="nrreale/nrreale9.pdf" target="intro">Recapitulare 9</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Intervale</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="interval/inter1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="interval/inter2.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="interval/inter1b.pdf" target="intro">Fișa 3</a></li>
+                <li><a href="interval/inter2b.pdf" target="intro">Fișa 4</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Inecuații</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="inec/inec1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="inec/inec2.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="inec/inec3.pdf" target="intro">Fișa 3</a></li>
+                <li><a href="inec/inec4.pdf" target="intro">Fișa 4</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Calcul algebric</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="calcalg/calcalg1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="calcalg/calcalg2.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="calcalg/alg2.pdf" target="intro">Fișa 3</a></li>
+                <li><a href="calcalg/alg3.pdf" target="intro">Fișa 4</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Desc. în factori</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="descfact/desc1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="descfact/desc2.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="descfact/desc3.pdf" target="intro">Fișa 3</a></li>
+                <li><a href="descfact/desc4.pdf" target="intro">Fișa 4</a></li>
+                <li><a href="descfact/desc5.pdf" target="intro">Fișa 5</a></li>
+                <li><a href="descfact/desc6.pdf" target="intro">Fișa 6</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Inegalități</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="ineg/ineg1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="ineg/ineg2.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="ineg/ineg3.pdf" target="intro">Fișa 3</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Expresii</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="expr/expr0.pdf" target="intro">Fișa 0</a></li>
+                <li><a href="expr/expr1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="expr/expr2.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="expr/expr3.pdf" target="intro">Fișa 3</a></li>
+                <li><a href="expr/expr4.pdf" target="intro">Fișa 4</a></li>
+                <li><a href="expr/expr5.pdf" target="intro">Fișa 5</a></li>
+                <li><a href="expr/expr6.pdf" target="intro">Fișa 6</a></li>
+                <li><a href="expr/fisa1.pdf" target="intro">Fișa 7</a></li>
+                <li><a href="expr/exprnw1.pdf" target="intro">Fișa 8</a></li>
+                <li><a href="expr/exprnw3.pdf" target="intro">Fișa 9</a></li>
+                <li><a href="expr/expold1.pdf" target="intro">Fișa 10</a></li>
+                <li><a href="expr/exprold2.pdf" target="intro">Fișa 11</a></li>
+                <li><a href="expr/exprold3.pdf" target="intro">Fișa 12</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Ecuația grd. II</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="ecgrd2/ecg2f1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="ecgrd2/ecg2f2.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="ecgrd2/ecgrdf3.pdf" target="intro">Fișa 3</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Funcții</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="functii/fct1.pdf" target="intro">Fișa 1</a></li>
+                <li><a href="functii/fct1a.pdf" target="intro">Fișa 2</a></li>
+                <li><a href="functii/fct2.pdf" target="intro">Fișa 3</a></li>
+                <li><a href="functii/fcth1.pdf" target="intro">Fișa 4</a></li>
+                <li><a href="functii/fctnw1.pdf" target="intro">Fișa 5</a></li>
+                <li><a href="functii/fctnw2.pdf" target="intro">Fișa 6</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="intro.html" target="intro">Introducere</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
